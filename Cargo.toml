@@ -1,0 +1,23 @@
+[package]
+name = "hello_world2"
+version = "0.1.0"
+edition = "2021"
+
+ 
+[dependencies]
+axum-streams = { version = "0.10", features=["json", "csv", "protobuf", "text"] }
+async-stream = "0.3.3"
+serde_json = { version = "1.0.96" }
+axum = { version = "0.6.10", features = ["headers"] }
+serde = { version = "1.0.154", features = ["derive"] }
+bytes = "1"
+futures-util = { version = "0.3", default-features = false, features = ["alloc"] }
+http = "0.2"
+mime = "0.3"
+tokio = { version = "1", features = ["full"] }
+tokio-stream = { version = "0.1" }
+tokio-util = { version = "0.7" }
+futures = "0.3"
+ 
+
+ 
